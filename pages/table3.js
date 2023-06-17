@@ -7,7 +7,7 @@ import Head from 'next/head';
 const Table3 = () => {
 
     // This table has filter functionality
-    
+
     const [tableData, setTableData] = useState([]);
     const [loader, setLoader] = useState(false);
     const [currentPage, setCurrentPage] = useState(0);
@@ -62,7 +62,8 @@ const Table3 = () => {
 
     const offset = currentPage * rowsPerPage;
     const filteredData = tableData.data?.filter(row =>
-        row.name.toLowerCase().includes(filterText.toLowerCase())
+        row.name.toLowerCase().includes(filterText.toLowerCase()) ||
+        row.email.toLowerCase().includes(filterText.toLocaleLowerCase())
     );
 
     const pageCount = Math.ceil(tableData.data?.length / rowsPerPage);
