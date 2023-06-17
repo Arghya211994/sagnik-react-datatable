@@ -4,6 +4,7 @@ import DataTable from 'react-data-table-component';
 import ReactPaginate from 'react-paginate';
 import Head from 'next/head';
 
+//this table has custom paginate and table data from api and loader
 
 const Table2 = () => {
     const [tableData, setTableData] = useState([]);

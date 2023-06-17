@@ -60,3 +60,21 @@
   margin-top: 200px;
 }
 
+.flt-input{
+  display: flex;
+  gap: .3rem;
+  padding: 30px;
+}
+
+.flt-input input{
+  border-radius: 3px;
+  border: 1px solid black;
+  padding-inline: 15px;
+}
+
+.flt-input button{
+  background-color: #f1f6fc;
+  padding-inline: 25px;
+  border-radius: 3px;
+  border:1px solid black !important;
+}
