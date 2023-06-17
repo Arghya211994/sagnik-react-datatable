@@ -98,6 +98,7 @@ const Table3 = () => {
                     data={currentData}
                     progressPending={loader}
                     progressComponent={<h1 className="loader">My Loader Component</h1>}
+                    selectableRows
                 />
                 <ReactPaginate
                     previousLabel="Previous"
